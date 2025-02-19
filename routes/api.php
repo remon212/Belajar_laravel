@@ -26,3 +26,5 @@ Route::get("/get_user",[AuthController::class,"getUser"]);
 Route::get("/get_detail_user/{id}",[AuthController::class,"getDetailUser"]);
 Route::put("/update_user/{id}",[AuthController::class,"update_user"]);
 Route::delete("/hapus_user/{id}",[AuthController::class,"hapus_user"]);
+Route::post("/login", [AuthController::class, "login"]);
+Route::get("/logout", [AuthController::class, "logout"]);
