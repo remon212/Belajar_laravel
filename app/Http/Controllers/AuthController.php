@@ -195,6 +195,6 @@ class AuthController extends Controller
         return response()->json([
             'status' => true,
             'message' => 'Sukses logout',
-        ], 200); // Mengembalikan status 200 untuk sukses
+        ], 200); 
     }
 }
